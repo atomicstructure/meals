@@ -11,19 +11,44 @@ class CategoriesScreen extends StatelessWidget {
       ),
       body: GridView(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            childAspectRatio: 3 / 2,
-            crossAxisSpacing: 20,
-            mainAxisSpacing: 20),
+          crossAxisCount: 2,
+          childAspectRatio: 3 / 2,
+          crossAxisSpacing: 20,
+          mainAxisSpacing: 20,
+        ),
         children: const [
-          Text('Femi'),
-          Text('Sesi'),
-          Text('Samantha'),
-          Text('Christmas'),
-          Text('Priscilla'),
-          Text('Arnold'),
-          Text('Tiresimi'),
-          Text('Tiwa'),
+          Text(
+            'Femi',
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            'Sesi',
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            'Samantha',
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            'Christmas',
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            'Priscilla',
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            'Arnold',
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            'Tiresimi',
+            style: TextStyle(color: Colors.white),
+          ),
+          Text(
+            'Tiwa',
+            style: TextStyle(color: Colors.white),
+          ),
         ],
       ),
     );
