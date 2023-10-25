@@ -1,10 +1,31 @@
 import 'package:flutter/material.dart';
 
-class Categories extends StatelessWidget {
-  const Categories({super.key});
+class CategoriesScreen extends StatelessWidget {
+  const CategoriesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Pick your Category'),
+      ),
+      body: GridView(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 3 / 2,
+            crossAxisSpacing: 20,
+            mainAxisSpacing: 20),
+        children: const [
+          Text('Femi'),
+          Text('Sesi'),
+          Text('Samantha'),
+          Text('Christmas'),
+          Text('Priscilla'),
+          Text('Arnold'),
+          Text('Tiresimi'),
+          Text('Tiwa'),
+        ],
+      ),
+    );
   }
 }
