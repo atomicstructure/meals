@@ -60,7 +60,7 @@ class _FiltersScreenState extends ConsumerState<FiltersScreen> {
             Filter.vegetarian: _vegetarianFilterSet,
           });
           // Navigator.of(context).pop();
-          return false;
+          return true;
         },
         child: Column(
           children: [
